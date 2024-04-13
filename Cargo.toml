@@ -1,0 +1,13 @@
+[package]
+name = "stargate-reflect"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+cosmwasm-std = { version = "1.1.0", features = ["stargate"] }
+cosmwasm-schema = { version = "1.1.0" }
